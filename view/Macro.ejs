@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="/css/styles.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="title">Details</div>
+    </header>
+
+     <div class="wrapper1">
+        <div class="mvi">
+            <% if(macroData != null) { %>        
+            <% macroData.forEach(function(singleMacro, index) { %>
+                <a class="movies__card">
+                    <img src="<%- singleMacro.image %>" alt="<%- singleMacro.title %>">
+                    <h2>Email: <%- singleMacro.email %></h2>
+                    <p>FirstName: <%- singleMacro.firstname %></p>
+                    <p>LastName: <%- singleMacro.lastname %></p>
+                </a>
+            <% }) %>
+            <% } else { %>
+                No posts found.
+            <% } %> 
+    </div>
+</div>
+<footer class="footer">
+    
+</footer>
+ </body>
+</html>  
