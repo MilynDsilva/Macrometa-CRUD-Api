@@ -16,11 +16,6 @@ p {
   color: slateblue;
 }
 
-// .footer {
-//     margin: 0;
-//     font-family: 'Source Sans Pro', sans-serif;
-//     background-color: #f6f6f6;
-// }
 footer {
   display: flex;
   justify-content: center;
@@ -117,20 +112,14 @@ ul li {
   }
 }
 
-.movies__card {
+.details__card {
   text-decoration: none;
   color: #080808;
   background-color: #fff;
   padding: 20px;
 }
 
-.movies__card:hover {
+.details__card:hover {
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
 }
-// .postCustomController    {
-//     background-color: #fff;
-//     max-width: 1300px;
-//     margin: 0 auto;
-//     padding: 2rem;
-// }
