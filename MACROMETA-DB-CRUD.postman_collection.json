@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "7d3e227b-0933-49bb-b435-0ce9db1050d7",
+		"name": "MACROMETA-DB-CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all user details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/crud/all",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"crud",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Demo1\",\r\n    \"lastName\": \"Data1\",\r\n    \"email\": \"Demo@gmai1l.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/crud/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"crud",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\":\"ew6MdJQ9REiu7XhH4gLwWQ\",\r\n    \"firstName\": \"Demo1\",\r\n    \"lastName\": \"Data1\",\r\n    \"email\": \"Demo@gmai1l.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/crud/update",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"crud",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user details",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Demo1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/crud/user",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"crud",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
